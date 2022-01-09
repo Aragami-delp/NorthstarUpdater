@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QtUZqnA2H11RN7t2iH7faVlX6Cyyt44GjHhORilgkPlTcjbCNfbjg8CXX7jzrXIrJVz0aT9p6iNvjPvgr+QfdA==",
+  "success": true,
+  "projectFilePath": "C:\\git\\NorthstarUpdater\\NorthstarUpdater\\NorthstarUpdater\\NorthstarUpdater.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aragami\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
