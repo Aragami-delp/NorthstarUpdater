@@ -7,12 +7,15 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Aragami\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.8.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.0.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="$([MSBuild]::EnsureTrailingSlash($(NuGetPackageFolders)))" />
+    <SourceRoot Include="C:\Users\Aragami\.nuget\packages\" />
   </ItemGroup>
-  <PropertyGroup>
-    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.dotnet.upgradeassistant.extensions.default.analyzers\0.3.261602\build\Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dotnet.upgradeassistant.extensions.default.analyzers\0.3.261602\build\Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_DotNet_UpgradeAssistant_Extensions_Default_Analyzers Condition=" '$(PkgMicrosoft_DotNet_UpgradeAssistant_Extensions_Default_Analyzers)' == '' ">C:\Users\Aragami\.nuget\packages\microsoft.dotnet.upgradeassistant.extensions.default.analyzers\0.3.261602</PkgMicrosoft_DotNet_UpgradeAssistant_Extensions_Default_Analyzers>
   </PropertyGroup>
 </Project>
